@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Friend Finder</title>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+	</script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://bootswatch.com/flatly/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/style.css" rel="stylesheet">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+</head>
+
+<body>
+	<div class="container">
+		<div class="jumbotron">
+			<h1 class='text-center'><span class="glyphicon glyphicon-user"></span> Friend Finder</h1>
+
+
+			<h3 class='text-center'>Answer a few basic questions.<br>
+			Then find the "friend" with the greatest compatibility!</h3>
+
+			<hr>
+
+
+			<div class='text-center'>
+				<button class="btn btn-primary btn-lg" id='survey' type="button"><span class="glyphicon glyphicon-list"></span> Go to Survey</button>
+			</div>
+		</div>
+		<a href='api/friends'>API Friends link</a> | <a href='https://github.com/masterprocess/galpalFinder'>Github Repo</a> 
+		<script>
+		  $('#survey').on('click',function(){
+		      location.href = "/survey";
+		  });
+		</script> 
+	</div>
+</body>
+</html>
